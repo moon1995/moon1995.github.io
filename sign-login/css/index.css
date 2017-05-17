@@ -1,0 +1,134 @@
+body,ul{
+	margin:0;
+	padding:0;
+	}
+div.top{
+	
+	padding-left:100px;
+	width:100%;
+	display:table;
+	}
+div.logo{
+	margin-top:10px;
+	float:left;
+	}
+span{
+	display:inline-block;}
+span.hy{
+	margin-left:50px;
+	margin-top:-70px;
+	vertical-align:middle;
+	font-size:36px;
+	font-family:"宋体";
+	color:#666;
+	}
+div.logo img{
+	width:150px;}
+div.phone{
+	margin-right:200px;
+	float:right;
+	padding-top:40px;
+	color:#060;
+	vertical-align:middle;
+}
+a{
+	color:#060;
+	text-decoration:none;}
+a:hover{
+	color:#f60;
+	}
+div.phone span{
+	vertical-align:middle;}
+div.phone .number span{
+	background:url(../img/8.jpg) no-repeat -54px -12px;
+	width:30px;height:33px;
+	}
+div.phone .contact span{
+	background:url(../img/8.jpg) no-repeat -145px -12px;
+	width:30px;height:33px;
+	 }
+div.middle{
+	background:#814454 url(../img/4.jpg) no-repeat -400px 0px;
+	overflow:hidden;
+	clear:both;
+	height:500px;
+}
+ul{
+	list-style:none;
+	margin-top:20px;
+}
+div.middle .left img{
+	width:1000px;}
+div.login{
+	padding-top:30px;
+	border-radius:10px;
+	margin-top:60px;
+	text-align:center;
+	color:#000;
+	float:right;
+	margin-right:200px;	
+	background-color:rgba(251,247,222,0.6);
+	width:500px;
+	height:400px;
+}
+input{
+	margin-top:10px;
+	color:#666;
+	height:30px;
+	width:300px;
+	background:transparent;
+	border:1px solid #666;
+	}
+.ul0{
+	overflow:hidden;
+	margin-bottom:50px;
+	width:300px;
+	margin:0 auto;
+	border-bottom:1px solid #666;}
+.ul0 li{
+	font-size:20px;
+	width:150px;
+	line-height:20px;
+	height:30px;
+	text-align:center;
+	float:left;}
+#ul2{
+	display:none;}
+ul li{
+height:60px;
+	}
+
+input.yzm{
+	margin-left:-205px;
+	width:100px;}
+li.submit{
+	background:rgba(102,153,204,0.8);
+	height:50px;
+	width:300px;
+	line-height:50px;
+	margin:0 auto;
+	}
+li.submit:hover{
+	background:#F63;}
+.active{
+	border-bottom:2px solid #f30;}
+div.foot{
+		margin-top:20px;}
+div.foot ul{
+	overflow:hidden;
+	width:1200px;
+	margin:0 auto;
+	}
+div.foot ul li{
+	text-align:center;
+	color:#333;
+	float:left;
+	width:130px;
+	height:14px;
+	border-right:1px solid #666;
+	line-height:14px;
+	font-size:14px;}
+div.foot ul li:hover{
+	color:#F63;}
+#ul2 span{
+	color:#f00;}

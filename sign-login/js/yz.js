@@ -1,0 +1,47 @@
+$(function(){
+$("#user").blur(function(){
+			if($(this).val()==""){
+			$("#useryz").html("用户名不能为空");
+			}
+			else if($(this).val().length<=6 && !$(this).val()==""){
+			$("#useryz").html("用户名不能少于六个字符");
+			}else{
+				$("#useryz").html("");
+				}
+		});
+$("#pwd_").blur(function(){
+	if($(this).val()!=$("#pwd").val()){
+		$("#pwdyz2").html("两次密码必须相同");
+		$("#pwd").val("");
+		$("#pwd_").val("");
+		$("#pwd").focus();
+		}else{
+			$("#pwdyz2").html("");}
+	});
+$("#user1").focus(function(){
+	$(this).val("");
+	$("#pwd1").val("");});
+$("#user").focus(function(){
+    $(this).val("");
+	$("#pwd").val("");
+	$("#pwd_").val("");
+	$("#useryz").html("");
+	$("#pwdyz").html("");
+	$("#pwdyz2").html("");
+	});
+$("#pwd1").blur(function(){
+	if($("#user1").val()==""){
+		$("#user1").val("用户名");}
+if($(this).val()==""){
+	$(this).val("密码")
+	}});
+$("#pwd").blur(function(){
+	
+		if($("#pwd").val()==""){
+				$("#pwdyz").html("密码不能为空");
+				}
+if($("#user1").val()==""){
+	$("#user1").val("用户名")
+	}
+	});
+});
