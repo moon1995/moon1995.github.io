@@ -14,20 +14,26 @@ $("#pwd_").blur(function(){
 		$("#pwdyz2").html("两次密码必须相同");
 		$("#pwd").val("");
 		$("#pwd_").val("");
-		$("#pwd").focus();
 		}else{
 			$("#pwdyz2").html("");}
 	});
 $("#user1").focus(function(){
 	$(this).val("");
-	$("#pwd1").val("");});
+	});
+$("#pwd1").focus(function(){
+	$(this).val("");
+	});
+$("#pwd").focus(function(){
+	$(this).val("");
+	});
+$("#pwd_").focus(function(){
+	 if($("#pwd").val()!=""){
+	 $(this).val("");}else{
+	$("#pwdyz2").html("请先输入密码");}
+	});
 $("#user").focus(function(){
     $(this).val("");
-	$("#pwd").val("");
-	$("#pwd_").val("");
 	$("#useryz").html("");
-	$("#pwdyz").html("");
-	$("#pwdyz2").html("");
 	});
 $("#pwd1").blur(function(){
 	if($("#user1").val()==""){
@@ -36,12 +42,17 @@ if($(this).val()==""){
 	$(this).val("密码")
 	}});
 $("#pwd").blur(function(){
-	
 		if($("#pwd").val()==""){
 				$("#pwdyz").html("密码不能为空");
 				}
-if($("#user1").val()==""){
-	$("#user1").val("用户名")
-	}
 	});
+$("#denglu").click(function(){
+	$("#submit").submit();
+	});
+$("#zhuce").click(function(){
+	$("#submit1").submit();
+	});
+$("#pwd").focus(function(){
+				$("#pwdyz").html("");
+				});
 });

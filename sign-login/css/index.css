@@ -108,8 +108,10 @@ li.submit{
 	line-height:50px;
 	margin:0 auto;
 	}
+
 li.submit:hover{
-	background:#F63;}
+	background:#F63;
+}
 .active{
 	border-bottom:2px solid #f30;}
 div.foot{
