@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页滑动门菜单</title>
+<style>
+* {list-style-type:none; font-size:14px; text-decoration:none; margin:0; padding:0;}
+.tab{  margin:20px; width:244px; height:200px; overflow:hidden; border:1px #AACCEE solid;}
+.tab_b{ overflow:hidden; margin:5px; }
+.menu{overflow:hidden; }
+.menu li{ display:block; float:left; display: list-item; text-align:center; width:60px; background-color:#EDF4FC;line-height:20px; border-bottom:1px #AACCEE solid;border-right:1px #AACCEE solid; }
+.menu li a{ display:block;}
+.menu_d{border-bottom:1px #FFFFFF solid;background-color:#FFFFFF; }
+.tab ul li.aaa{background: #FFFFFF;border-bottom:0px #FFFFFF solid;}
+</style>
+</head>
+<body>
+<script language="javascript">
+function tabs(n)
+{
+var len = 4;
+for (var i = 1; i <= len; i++)
+{
+document.getElementById('tab_a' + i).style.display = (i == n) ? 'block' : 'none';
+document.getElementById('tab_' + i).className = (i == n) ? 'aaa' : 'none';
+}
+}
+</script>
+<div class="tab">
+<ul class="menu" id="menutitle">
+<li id="tab_1" class="aaa"><a href="javascript:void(0)" onclick="tabs('1');" >新闻</a></li>
+<li id="tab_2" ><a href="javascript:void(0)" onmouseover="tabs('2');" >生活</a></li>
+<li id="tab_3" ><a href="javascript:void(0)" onmouseover="tabs('3');" >房产</a></li>
+<li id="tab_4" ><a href="javascript:void(0)" onmouseover="tabs('4');" >旅游</a></li>
+</ul>
+<div class="tab_b" id="tab_a1" style="display:block;"> 　据新闻网10月17日消息，美国阿尔肯色州两列火车相撞，目前已造成44人受伤，其中5人伤势严重。据报道，事故发生在美国阿肯色州的铁路段。据初步调查结果显示，一列搭载旅客的列车由于技术故障突然停车，同时一列货运火车沿同一轨道驶来，两列火车相撞，导致事故发生。此外，此次事故导致超过10吨柴油</div>
+<div class="tab_b" id="tab_a2" style="display:none;">据介绍，今年9月底，杭州市市、区两级政府完成了医养护一体化签约服务对象、服务方式、服务内容、服务费用及医保政策等相关配套政策的制定。医养护一体化全科签约服务以社区卫生服务机构为平台，各级医疗卫生机构纵向协作服务体系为支撑，参保居民可选择1名全科医生，签订不少于1年的服务协议。</div>
+<div class="tab_b" id="tab_a3" style="display:none;">央行9月30日发布了关于放松住房信贷政策的通知，宣布房贷认定新标准，并重申贷款购买首套普通自住房，贷款利率最低可打7折。受“限购”解除和信贷放松政策双重影响，各“解限”城市成交略有回升。专业人士表示，随着此次楼市调控政策“见底”，此前持续“向下”的楼市或将进入“缓冲期”。业内人士认为，能否带动成交量大增，仍要看银行的执行力度，这一效果将在四季度逐步释放。</div>
+<div class="tab_b" id="tab_a4" style="display:none;">苟各庄是野三坡境内具有完善旅游产业链条的民俗村之一，这个民俗村已脱离了原始的民俗，是一处具有徽派装饰风格，现代化的经营理念的住宿集中地。苟各庄村距离百里峡售票处1000多米，步行只需要大约10分钟左右即可到达。这里有风景如画的百里画廊，有清澈见底拒马河，有着让人尽情宣泄的马场，有着原始自然的漂流，有惊险刺激的华索、蹦极。</div>
+</div>
+</body>
+</html>

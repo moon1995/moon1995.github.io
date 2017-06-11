@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+        <title>JavaScript实战课程 优酷电视剧频道幻灯片制作详解</title>
+        <link rel="stylesheet" type="text/css" href="style/youku.css">
+        <script type="text/javascript" src="js/tween.js"></script>
+        <script type="text/javascript" src="js/tweenlite.js"></script>
+        <script type="text/javascript" src="js/youku.js"></script>
+    </head>
+    
+    <body>
+    	<div id="slide">
+        	<div id="view">
+                <div id="box">
+                    <div class="pages">
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="乡村爱情变奏曲：爆笑神剧" src="images/1.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>乡村爱情变奏曲：爆笑神剧</em>
+                                <span>王小宝/小沈阳/贺树峰/刘小光</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MjUyOTM2.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="那年冬天,风在吹：宋慧乔赵寅成悲恋" src="images/2.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>那年冬天,风在吹：宋慧乔赵寅成悲恋</em>
+                                <span>赵寅成/宋慧乔/金范/郑恩地</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MjUyOTM2.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="都是兄弟：别样兄弟情 " src="images/3.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>都是兄弟：别样兄弟情</em>
+                                <span>吴京安/韩青/顾艳/普超英</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MDk3MDgw.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pages">
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="心路GPS：体验真人秀" src="images/4.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>心路GPS：体验真人秀</em>
+                                <span>李司棋/陈展鹏/黄翠如/麦长青</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MjY0OTQw.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="恋爱季节：爆笑拼图爱情" src="images/5.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>恋爱季节：爆笑拼图爱情</em>
+                                <span>马国明/胡杏儿/吴卓羲/徐子珊</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MjUyOTM2.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="IRIS 2：霸气归来揭黑色谜团" src="images/6.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>IRIS 2：霸气归来揭黑色谜团</em>
+                                <span>张赫/李多海/金永哲/李凡秀</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE3MjUwMDcy.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pages">
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="钱的化身：揭露韩国钱权交易" src="images/7.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>钱的化身：揭露韩国钱权交易</em>
+                                <span>姜至奂/黄静茵/朴尚民/吴允儿</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE1NDc4MDQw.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="独生子女的婆婆妈妈：小夫妻战婆妈" src="images/8.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>独生子女的婆婆妈妈：小夫妻战婆妈</em>
+                                <span>童瑶/李健/刘一含/曹征</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE1NzM2Mzg0.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="上班太危险，宅星最安全" src="images/9.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>上班太危险，宅星最安全</em>
+                                <span>杨金承/安琥/张洋/柴碧云</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTEyNDE4NjA0.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pages">
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="金大花的华丽冒险：丑女大翻身" src="images/10.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>金大花的华丽冒险：丑女大翻身</em>
+                                <span>谢欣颖/温升豪/吴慷仁/薛仕凌</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNTE1NjU4OTI4.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="楚汉传奇：陈道明吊丝逆袭" src="images/11.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>楚汉传奇：陈道明吊丝逆袭</em>
+                                <span>陈道明/何润东/段奕宏/秦岚</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNDkyODQwNjgw.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li class="pics">
+                                <img alt="终极一班2：异能穿越王者归来" src="images/12.jpg"/>
+                            </li>
+                            <li class="info">
+                                <em>终极一班2：异能穿越王者归来</em>
+                                <span>汪东城/曾沛慈/明杰/文雨非</span>
+                                <i></i>
+                            </li>
+                            <li class="url">
+                                <a href="http://v.youku.com/v_show/id_XNDkzNTc3NTI4.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="dots"></div>
+            <a id="lbt" class="bts" href="javascript:void(0);"></a>
+            <a id="rbt" class="bts" href="javascript:void(0);"></a>
+        </div>
+    </body>
+</html>

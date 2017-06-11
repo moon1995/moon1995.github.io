@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>横向展开的二级导航菜单</title>
+    <style type="text/css">
+        .suckerdiv { }
+        .suckerdiv ul { width: 120px; position: relative; }
+        .suckerdiv ul li ul { left: 120px;  position: absolute; width: 140px; top: 0; display: none; }
+           
+        .suckerdiv ul li ul li ul { left: 159px;  }
+           
+        .suckerdiv ul li a { display: block; color: # 690; text-decoration: none; font:12px 宋体; background: #eee; line-height:25px; padding: 0px 10px; border: 1px solid #fff; border-bottom: 0; }
+        .suckerdiv ul li a:visited { color: black; }
+        .suckerdiv ul li a:hover{ color: white; background-color: #97c839; }
+        .suckerdiv .subfolderstyle { }
+        .suckerdiv a.subfolderstyle:hover { background: #97c839 url() no-repeat center right; }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    var menuids = ["suckertree1"]
+    function buildsubmenus() {
+        for (var i = 0; i < menuids.length; i++) {
+            var ultags = document.getElementById(menuids[i]).getElementsByTagName("ul")
+            for (var t = 0; t < ultags.length; t++) {
+                ultags[t].parentNode.getElementsByTagName("a")[0].className = "subfolderstyle"
+                ultags[t].parentNode.onmouseover = function () {
+                    this.getElementsByTagName("ul")[0].style.display = "block";
+                    this.firstChild.style.backgroundColor = 'green';
+                }
+                ultags[t].parentNode.onmouseout = function () {
+                    this.getElementsByTagName("ul")[0].style.display = "none"
+                    this.firstChild.style.backgroundColor = '';
+                }
+            }
+        }
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", buildsubmenus, false)
+    else if (window.attachEvent)
+        window.attachEvent("onload", buildsubmenus)
+</script>
+<div class="suckerdiv">
+    <ul id="suckertree1">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">企业新闻</a></li>
+        <li><a href="#">企业文化</a></li>
+        <li><a href="#">产品介绍</a>
+            <ul>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">数码相机</a></li>
+                <li><a href="#">台式机</a></li>
+                <li><a href="#">打印机</a></li>
+                <li><a href="#">办公耗材</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

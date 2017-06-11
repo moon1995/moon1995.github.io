@@ -1,0 +1,29 @@
+html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td{margin:0; padding:0; -webkit-text-size-adjust:none;}
+ul,dl,ol{list-style:none;}
+img{border:0 none;}
+h1,h2,h3,h4,h5,h6,em,del{font-style:normal; font-weight:normal; font-size:100%; -webkit-text-size-adjust:none;}
+.cl{zoom:1;}
+.cl:after{display:block; height:0; clear:both; visibility:hidden; overflow:hidden; content:'.';}
+
+body{font-size:14px; font-family:Microsoft YaHei; background:#333;}
+#slide{margin:50px auto 0; padding:10px 15px 0; width:900px; background:#d6d6d6; overflow:hidden; position:relative;}
+#slide #view{width:900px; overflow:hidden; position:relative;}
+#slide .bts,#slide #dots i{background:url(../images/bgs.png) no-repeat; cursor:pointer; _background:none;}
+#slide .bts{top:84px; width:34px; height:60px; z-index:4; position:absolute;}
+#slide #lbt{left:0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/lbt.png");}
+#slide #rbt{right:0; background-position:-34px 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/rbt.png");}
+#slide #box{margin-left:-915px; width:5000px; height:210px; overflow:hidden; position:relative;}
+#slide #box .pages{margin-right:15px; width:900px; overflow:hidden; float:left;}
+#slide #box .pages ul,#slide #box .pages ul .pics,#slide #box .pages ul .pics img{width:300px; height:210px;}
+#slide #box .pages ul{float:left; position:relative;}
+#slide #box .pages ul .info{left:0; top:190px; width:300px; height:42px; z-index:1; position:absolute;}
+#slide #box .pages ul .info em,#slide #box .pages ul .info span{display:block; padding:0 10px; width:280px; text-shadow:2px 2px 1px #000; z-index:1; position:relative;}
+#slide #box .pages ul .info em{height:22px; line-height:20px; font-size:15px; color:#fff;  overflow:hidden;}
+#slide #box .pages ul .info span{height:16px; line-height:16px; font-size:12px; color:#ccc;}
+#slide #box .pages ul .info i{display:block; top:0; left:0; width:100%; height:42px; opacity:0.5; filter:alpha(opacity=50); background:url(../images/playIcon.png) #000 no-repeat 260px -42px; z-index:0; cursor:pointer; position:absolute;}
+#slide #box .pages ul .info.active i{background-position:260px center;}
+#slide #box .pages ul .url{top:0; left:0; z-index:2; position:absolute;}
+#slide #box .pages ul .url a{display:block; width:300px; height:210px; background:url(../images/spacer.gif) no-repeat;}
+#slide #dots{padding:12px 0; height:16px; text-align:center; overflow:hidden;}
+#slide #dots i{display:inline-block; margin:0 5px; width:16px; height:16px; cursor:pointer; background-position:-52px -64px; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/dot.png");}
+#slide #dots i.active{background-position:0 -64px; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/dotActive.png");}
